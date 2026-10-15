@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sheehan Ganguly — Computer Engineering student focused on digital ASIC design, reconfigurable computing, computer architecture, and AI accelerators." />
+  <meta name="theme-color" content="#07110f" />
+  <title>Sheehan Ganguly | Hardware Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="Home">SG<span>.</span></a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="#work">Work</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-shell">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="status-dot"></span> COMPUTER ENGINEERING · UW</div>
+        <h1>I build hardware that moves from <span>architecture</span> to <span>silicon.</span></h1>
+        <p class="hero-sub">I'm Sheehan Ganguly, a Computer Engineering student at the University of Washington focused on digital ASIC design, reconfigurable computing, computer architecture, and AI acceleration.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#work">Explore my work <span>↘</span></a>
+          <a class="button button-ghost" href="assets/Sheehan_Ganguly_Resume.pdf" target="_blank" rel="noopener">Resume ↗</a>
+        </div>
+        <div class="hero-meta">
+          <div><strong>TSMC 180nm</strong><span>ASIC tapeout</span></div>
+          <div><strong>50 MHz</strong><span>post-PAR closure</span></div>
+          <div><strong>2 GHz</strong><span>custom register file</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-label="Abstract chip diagram">
+        <div class="chip-wrap">
+          <div class="chip-label label-top">RISC-V · CGRA · RTL</div>
+          <div class="chip-grid">
+            <div class="chip-core">
+              <span class="mono">SG // HW</span>
+              <strong>ARCH → RTL → GDS</strong>
+              <small>reconfigurable compute</small>
+            </div>
+            <i style="--x:0;--y:0"></i><i style="--x:1;--y:0"></i><i style="--x:2;--y:0"></i><i style="--x:3;--y:0"></i>
+            <i style="--x:0;--y:1"></i><i style="--x:3;--y:1"></i>
+            <i style="--x:0;--y:2"></i><i style="--x:3;--y:2"></i>
+            <i style="--x:0;--y:3"></i><i style="--x:1;--y:3"></i><i style="--x:2;--y:3"></i><i style="--x:3;--y:3"></i>
+          </div>
+          <div class="signal signal-a"></div><div class="signal signal-b"></div><div class="signal signal-c"></div>
+          <div class="chip-label label-bottom">VERIFY · PLACE · ROUTE</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ticker" aria-label="Areas of focus">
+      <div class="ticker-track">
+        <span>DIGITAL ASIC</span><b>✦</b><span>AI ACCELERATORS</span><b>✦</b><span>RTL & VERIFICATION</span><b>✦</b><span>RECONFIGURABLE COMPUTING</span><b>✦</b><span>COMPUTER ARCHITECTURE</span><b>✦</b><span>PHYSICAL DESIGN</span><b>✦</b>
+        <span>DIGITAL ASIC</span><b>✦</b><span>AI ACCELERATORS</span><b>✦</b><span>RTL & VERIFICATION</span><b>✦</b><span>RECONFIGURABLE COMPUTING</span><b>✦</b><span>COMPUTER ARCHITECTURE</span><b>✦</b><span>PHYSICAL DESIGN</span><b>✦</b>
+      </div>
+    </section>
+
+    <section id="work" class="section-shell section-block">
+      <div class="section-heading reveal">
+        <div><span class="section-index">01</span><span class="eyebrow">SELECTED WORK</span></div>
+        <h2>Projects that shaped how I think about hardware.</h2>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card project-featured project-clickable reveal" tabindex="0" role="button" aria-label="Open the RTA-V4 project case study" data-project-open="rta">
+          <div class="project-topline"><span class="badge">2026 · TAPEOUT</span><span class="mono muted">TSMC 180nm · RTA-V4</span></div>
+          <div class="project-content">
+            <div>
+              <h3>Dual-Mode INT8 CGRA / INT4 Systolic Accelerator</h3>
+              <p>A 4×4 reconfigurable spatial accelerator that supports both CGRA-style INT8 kernels and packed INT4 systolic execution on the same processing-element fabric. I contributed external-interface RTL and end-to-end verification, and led physical implementation through timing closure and signoff.</p>
+              <div class="metric-row project-metrics">
+                <div><b>4 × 4</b><span>reconfigurable PE array</span></div>
+                <div><b>2 modes</b><span>CGRA INT8 + systolic INT4</span></div>
+                <div><b>4 FIFOs</b><span>N/W inputs, E/S outputs</span></div>
+                <div><b>50 MHz</b><span>post-route timing met</span></div>
+              </div>
+              <div class="tags"><span>SystemVerilog</span><span>BSG-Link</span><span>VCS</span><span>Hammer</span><span>Genus</span><span>Innovus</span><span>Tempus</span></div>
+            </div>
+            <div class="project-diagram project-image-preview">
+              <img src="assets/rta/rta-layout-clean.png" alt="Final routed layout of the RTA-V4 tapeout with the pad ring around the core." />
+              <div class="preview-chipline">
+                <span>Routed layout</span>
+                <strong>Click for full case study</strong>
+              </div>
+            </div>
+          </div>
+          <div class="project-footer"><span>Click to open architecture, external-interface diagrams, verification flow, and physical-design details.</span><strong>Open case study ↗</strong></div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-topline"><span class="badge badge-live">CURRENT</span><span class="mono muted">Berkeley Lab</span></div>
+          <h3>RISC-V + eFPGA AI Accelerator SoC</h3>
+          <p>Integrated an Ibex RISC-V core with SRAM, UART, and reconfigurable eFPGA compute over TL-UL. Built the memory map and host programming path, generated synthesizable eFPGA RTL with FABulous, and verified system-level behavior in QuestaSim.</p>
+          <div class="tags"><span>Ibex</span><span>TL-UL</span><span>FABulous</span><span>QuestaSim</span></div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-topline"><span class="badge badge-live">RESEARCH</span><span class="mono muted">PNCEL Lab</span></div>
+          <h3>DORA CGRA Generation</h3>
+          <p>Researching the boundary between specialization and programmability in spatial accelerators through DORA, a framework for generating and exploring CGRA architectures.</p>
+          <div class="tags"><span>CGRA</span><span>AI Systems</span><span>HW/SW Co-Design</span></div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-topline"><span class="badge">2026 · FULL CUSTOM</span><span class="mono muted">45 nm</span></div>
+          <h3>16×13-bit CMOS Register File</h3>
+          <p>Designed a full-custom register file in Cadence Virtuoso with edge-triggered DFF storage, hierarchical mux/demux logic, extracted-layout simulation, and DRC/LVS verification.</p>
+          <div class="metric-row"><div><b>2 GHz</b><span>target achieved</span></div><div><b>16 × 13</b><span>storage array</span></div></div>
+          <div class="tags"><span>Virtuoso</span><span>HSPICE</span><span>DRC/LVS</span></div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-topline"><span class="badge">CPU DESIGN</span><span class="mono muted">SystemVerilog</span></div>
+          <h3>ARM-Based 5-Stage Pipelined CPU</h3>
+          <p>Built and verified a five-stage processor with forwarding, hazard detection, branch prediction, register file, ALU, control logic, cache, and memory hierarchy.</p>
+          <div class="metric-row"><div><b>2.7×</b><span>speedup</span></div><div><b>70%</b><span>CPI reduction</span></div></div>
+          <div class="tags"><span>Pipeline</span><span>Hazards</span><span>Branch Prediction</span></div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-topline"><span class="badge badge-live">IN PROGRESS</span><span class="mono muted">Verification / Flow</span></div>
+          <h3>Tiny Tapeout CMOS5L Verification Flow</h3>
+          <p>Building a cocotb-based verification strategy and protocol models while validating the tool environment with a dummy RTL-to-GDS build using the Tiny Tapeout CMOS5L Verilog template.</p>
+          <div class="tags"><span>cocotb</span><span>Python</span><span>Verilog</span><span>RTL → GDS</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience" class="section-shell section-block">
+      <div class="section-heading reveal">
+        <div><span class="section-index">02</span><span class="eyebrow">EXPERIENCE</span></div>
+        <h2>Building across the hardware stack.</h2>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item reveal">
+          <div class="timeline-date">MAY 2026 — PRESENT</div>
+          <div class="timeline-content"><div class="timeline-head"><h3>Lawrence Berkeley National Laboratory</h3><span>Mixed-Signal IC Design Intern</span></div><p>Architecting and verifying a RISC-V-based SoC with memory, peripherals, and eFPGA-based reconfigurable compute.</p></div>
+        </article>
+        <article class="timeline-item reveal">
+          <div class="timeline-date">DEC 2025 — PRESENT</div>
+          <div class="timeline-content"><div class="timeline-head"><h3>PNCEL Lab · University of Washington</h3><span>Undergraduate Researcher</span></div><p>Hardware-software co-design for AI systems, including CGRA generation and full-system ASIC tapeout work.</p></div>
+        </article>
+        <article class="timeline-item reveal">
+          <div class="timeline-date">JUN — AUG 2025</div>
+          <div class="timeline-content"><div class="timeline-head"><h3>Lawrence Berkeley National Laboratory</h3><span>Hardware Intern</span></div><p>Developed a low-power LoRaWAN environmental sensing platform and power-control / FFT processing for TI mmWave radar.</p></div>
+        </article>
+        <article class="timeline-item reveal">
+          <div class="timeline-date">JUN — SEP 2024</div>
+          <div class="timeline-content"><div class="timeline-head"><h3>S5 Solutions</h3><span>Hardware / Software Intern</span></div><p>Built Gerber-file analysis tooling and implemented FPGA logic plus UART host communication on a Lattice device.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="skills-section section-block">
+      <div class="section-shell">
+        <div class="section-heading reveal">
+          <div><span class="section-index">03</span><span class="eyebrow">TOOLBOX</span></div>
+          <h2>Comfortable from RTL to physical implementation.</h2>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-group reveal"><span class="mono">01 / RTL</span><h3>Digital Design</h3><p>SystemVerilog · FSMs · pipelined datapaths · control · clock-aware design · synthesizable RTL</p></div>
+          <div class="skill-group reveal"><span class="mono">02 / ASIC</span><h3>Implementation</h3><p>Cadence Genus · Innovus · Tempus · Virtuoso · STA · SDC · DRC/LVS · Hammer</p></div>
+          <div class="skill-group reveal"><span class="mono">03 / VERIFY</span><h3>Verification</h3><p>Synopsys VCS/Verdi · UVM · QuestaSim · cocotb · directed/random testing · golden models</p></div>
+          <div class="skill-group reveal"><span class="mono">04 / FPGA</span><h3>Reconfigurable</h3><p>Vivado · Quartus/ModelSim · Lattice iCEcube2 · FABulous · UART · FPGA prototyping</p></div>
+          <div class="skill-group reveal"><span class="mono">05 / CODE</span><h3>Programming</h3><p>Python · C/C++ · Java · RISC-V Assembly · Linux CLI</p></div>
+          <div class="skill-group reveal"><span class="mono">06 / SYSTEMS</span><h3>Architecture</h3><p>RISC-V · CGRAs · systolic arrays · caches · TL-UL · embedded systems · HW/SW co-design</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section-shell section-block about-grid">
+      <div class="section-heading reveal">
+        <div><span class="section-index">04</span><span class="eyebrow">ABOUT</span></div>
+        <h2>Engineering with a systems perspective.</h2>
+      </div>
+      <div class="about-copy reveal">
+        <p class="lead">I’m pursuing a B.S. in Computer Engineering at the University of Washington, where I’ve focused my coursework and research on VLSI, computer architecture, semiconductors, FPGA design, and embedded systems.</p>
+        <p>I’m most interested in the point where architecture becomes physical: how decisions about programmability, data movement, and compute structure affect timing, area, power, verification, and ultimately whether a design works in silicon.</p>
+        <p>Outside the lab, I competed with UW Men’s Soccer and was part of the 2025 NCAA championship team. The same habits—preparation, iteration, and execution under pressure—show up in how I approach engineering.</p>
+        <div class="about-facts">
+          <div><span>EDUCATION</span><strong>University of Washington</strong><small>B.S. Computer Engineering · 2027</small></div>
+          <div><span>GPA</span><strong>3.75</strong><small>Paul G. Allen School</small></div>
+          <div><span>NEXT</span><strong>M.S. in ECE</strong><small>Intended 2027–2028</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <div class="section-shell contact-inner reveal">
+        <div><span class="eyebrow">LET'S BUILD SOMETHING</span><h2>Interested in digital design, accelerators, or silicon?</h2></div>
+        <div class="contact-actions">
+          <a class="button button-primary" href="mailto:sheehg@cs.washington.edu">sheehg@cs.washington.edu ↗</a>
+          <a class="text-link" href="https://www.linkedin.com/in/sheehan-ganguly-414818229/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal-shell" id="project-modal" aria-hidden="true" hidden>
+    <div class="modal-backdrop" data-modal-close></div>
+    <section class="project-modal" role="dialog" aria-modal="true" aria-labelledby="project-modal-title">
+      <button class="modal-close" type="button" aria-label="Close project details" data-modal-close>×</button>
+      <div class="project-modal-body">
+        <div class="modal-header-block">
+          <div class="modal-header-copy">
+            <div class="project-topline"><span class="badge">RTA-V4 CASE STUDY</span><span class="mono muted">TSMC 180nm · 2026</span></div>
+            <h2 id="project-modal-title">Dual-Mode Reconfigurable Spatial Accelerator</h2>
+            <p>This project explores whether one physical fabric can support both structured matrix execution and flexible spatial kernels. The chip uses a 4×4 processing-element array that switches between CGRA-style INT8 execution and packed INT4 systolic execution, while reusing the same datapath and interconnect resources across both modes.</p>
+            <div class="modal-actions-row">
+              <a class="button button-primary" href="assets/rta/Dual-mode_reconfigurable_chip_paper.pdf" target="_blank" rel="noopener">Open full report ↗</a>
+              <a class="button button-ghost" href="assets/rta/rta-layout-clean.png" target="_blank" rel="noopener">Open layout image ↗</a>
+            </div>
+          </div>
+          <div class="snapshot-panel">
+            <h3>Project snapshot</h3>
+            <ul>
+              <li><span>Process</span><strong>TSMC 180nm</strong></li>
+              <li><span>Fabric</span><strong>4×4 PE array</strong></li>
+              <li><span>Modes</span><strong>CGRA INT8 / systolic INT4</strong></li>
+              <li><span>I/O</span><strong>4 surrounding FIFOs</strong></li>
+              <li><span>Host path</span><strong>UART → FPGA → BSG-Link</strong></li>
+              <li><span>Timing</span><strong>50 MHz closed</strong></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="case-grid">
+          <section class="case-card">
+            <span class="mono">01 / WHAT IT DOES</span>
+            <h3>Shared compute fabric for tensor and non-tensor kernels</h3>
+            <p>The RTA-V4 fabric targets machine-learning workloads where dense matrix operations are important, but not the whole story. Between GEMM-heavy layers, models also need activations, elementwise arithmetic, comparisons, reductions, and data-format transformations. Instead of building separate engines, this design reuses one reconfigurable array for both structured systolic dataflow and more flexible CGRA-style kernels.</p>
+          </section>
+
+          <section class="case-card">
+            <span class="mono">02 / MY CONTRIBUTION</span>
+            <h3>External interface, verification, and physical design</h3>
+            <ul class="detail-list">
+              <li>Contributed external-interface RTL to move instructions and data between the host side and the compute fabric.</li>
+              <li>Built end-to-end verification around the real chip interfaces, including GEMM testing and returned-result checking against a golden model.</li>
+              <li>Led physical implementation through synthesis, place-and-route, extraction, DRC cleanup, and timing signoff.</li>
+            </ul>
+          </section>
+
+          <section class="case-card case-card-wide">
+            <span class="mono">03 / ARCHITECTURE</span>
+            <h3>Two compute modes on one PE array</h3>
+            <div class="detail-columns">
+              <div>
+                <h4>CGRA mode</h4>
+                <p>In reconfigurable mode, the array executes streaming integer kernels such as ReLU, leaky ReLU, elementwise add/subtract, comparisons, shifts, and other lightweight operators.</p>
+              </div>
+              <div>
+                <h4>Systolic mode</h4>
+                <p>In systolic mode, the same array supports matrix-style dataflow for regular multiply-accumulate style computation, using packed INT4 operations with local accumulation.</p>
+              </div>
+              <div>
+                <h4>Shared RMU</h4>
+                <p>Each processing element includes a Reconfigurable Multiply Unit that shares one compact multiplier datapath across both modes, enabling signed INT8 behavior in CGRA mode and packed signed INT4 dot-product behavior in systolic mode.</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="case-card case-card-wide">
+            <span class="mono">04 / EXTERNAL INTERFACE</span>
+            <h3>Instruction, data, and response flow</h3>
+            <p>The chip communicates with the host PC through a UART-to-FPGA path, with the FPGA acting as a passthrough to the chip over BSG-Link. Incoming packets are depacketized into instructions and data. Data words are vectorized and routed to the north or west input FIFOs, depending on configuration. Outputs are drained from the east and south FIFOs, packetized, and sent back to the host together with acknowledgments from the instruction path.</p>
+            <div class="detail-columns detail-columns-2">
+              <div>
+                <h4>Key datapath blocks</h4>
+                <ul class="detail-list compact">
+                  <li><strong>Depacketizer</strong> — parses incoming 32-bit packet words.</li>
+                  <li><strong>Instruction queue + decoder</strong> — issues control signals into the chip.</li>
+                  <li><strong>1:2 vectorizer / data concat</strong> — packs two 32-bit words into 64-bit vectors.</li>
+                  <li><strong>Packetizer</strong> — frames output vectors and ACK responses back to the host.</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Communication and control</h4>
+                <ul class="detail-list compact">
+                  <li>BSG-Link presents a core-facing valid/yumi interface and a serialized DDR pad-side interface.</li>
+                  <li>Four surrounding FIFOs support input from the north and west sides and output on the east and south sides.</li>
+                  <li>ACK generation provides host-visible status snapshots after each decoded instruction.</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <section class="case-card">
+            <span class="mono">05 / VERIFICATION</span>
+            <h3>Tested at multiple stages</h3>
+            <ul class="detail-list">
+              <li>End-to-end RTL testing with chip-top testbenches that configured the fabric through BSG-Link and checked GEMM outputs against a software golden model.</li>
+              <li>Post-synthesis and post-place-and-route simulation using Hammer-based sim-syn and sim-par flows.</li>
+              <li>Additional bring-up testing for pad connectivity, reset sequencing, and scan-chain behavior.</li>
+              <li>FPGA prototyping with UART passthrough to exercise realistic host-chip communication.</li>
+            </ul>
+          </section>
+
+          <section class="case-card">
+            <span class="mono">06 / PHYSICAL DESIGN</span>
+            <h3>Flat implementation with signoff-driven iteration</h3>
+            <ul class="detail-list">
+              <li>Manual floorplan placing the CGRA fabric near the center, with north / west input FIFOs and east / south output FIFOs around it.</li>
+              <li>External interface logic placed near the chip I/O side to reduce unnecessary routing distance.</li>
+              <li>Completed DRC, LVS, antenna, and timing checks, with final post-route timing meeting the 50 MHz target.</li>
+            </ul>
+          </section>
+        </div>
+
+        <section class="gallery-block">
+          <div class="gallery-heading">
+            <span class="mono">07 / DIAGRAMS & VISUALS</span>
+            <h3>Project diagrams from the report</h3>
+          </div>
+          <div class="gallery-grid">
+            <figure class="gallery-card gallery-card-large">
+              <img src="assets/rta/rta-layout-clean.png" alt="Clean routed layout image of the taped-out RTA-V4 chip with its pad ring." />
+              <figcaption><strong>Final routed layout</strong><span>The taped-out chip layout used on the main project card.</span></figcaption>
+            </figure>
+            <figure class="gallery-card">
+              <img src="assets/rta/rta-fabric-overview.png" alt="Diagram showing the 4 by 4 processing-element fabric surrounded by input and output FIFOs." />
+              <figcaption><strong>Fabric overview</strong><span>4×4 PE array with surrounding north/west input FIFOs and east/south output FIFOs.</span></figcaption>
+            </figure>
+            <figure class="gallery-card">
+              <img src="assets/rta/rta-pe-rmu.png" alt="Block diagram of a processing element, showing the crossbar, ALU, configuration, constants, and the reconfigurable multiply unit." />
+              <figcaption><strong>Processing element / RMU</strong><span>PE internals showing the crossbar, ALU, configuration block, and shared multiplier datapath.</span></figcaption>
+            </figure>
+            <figure class="gallery-card gallery-card-wide">
+              <img src="assets/rta/rta-external-interface.png" alt="External datapath diagram showing the BSG-Link path, depacketizer, instruction queue, decoder, control, vector FIFOs, fabric, packetizer, and serializer." />
+              <figcaption><strong>External interface datapath</strong><span>Instruction, data, and response flow from BSG-Link through the control path and surrounding vector FIFOs.</span></figcaption>
+            </figure>
+          </div>
+        </section>
+      </div>
+    </section>
+  </div>
+
+  <footer class="site-footer section-shell">
+    <span>© <span id="year"></span> Sheehan Ganguly</span>
+    <span class="mono">SEATTLE, WA · ARCH → SILICON</span>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
